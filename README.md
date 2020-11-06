@@ -15,9 +15,9 @@ Pandas, Matplotlib, HTML/CSS/Bootcamp, Javascript Plotly, JavaScript D3.js, Java
 6. Prepare a 15-minute data deep-dive or infrastructure walkthrough that shows machine learning in the context of what we’ve already learned.
 
 Visualizations/ Analyzations 
-    - Visualize the accuracy of the "line" 
-    - All home time, all away team, all underdogs 
-    - At what point do line points, do you want to bet on? (breakeven point) 
+   - Visualize the accuracy of the "line" 
+   - All home time, all away team, all underdogs 
+   - At what point do line points, do you want to bet on? (breakeven point) 
     
 Languages To Use:
   - Amazon AWS 

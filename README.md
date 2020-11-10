@@ -25,4 +25,5 @@ Languages To Use:
   - Pandas / Matplotlib 
   - HTML/ CSS/ Bootcamp 
   - Machine learning (must-have)
+  - D3.js
   

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
 @font-face {
   font-family: Milkshake;
-  src: url("./fonts/milkshake.ttf");
+  src: url("assets/fonts/milkshake.ttf");
 }
 /*
 	Urban by TEMPLATED
@@ -1986,11 +1986,14 @@ b {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: #0a2769;
+}
+
+h3 {
+  color: black;
 }
 
 blockquote {
@@ -2143,7 +2146,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #4aa3df;
+  background-color: #0a2769;
 }
 
 input[type="submit"]:active,
@@ -2151,7 +2154,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  background-color: #258cd1;
+  background-color: #0a2769;
 }
 
 input[type="submit"].alt,
@@ -3098,7 +3101,7 @@ table.alt tbody tr td {
 .wrapper.style1 h4,
 .wrapper.style1 h5,
 .wrapper.style1 h6 {
-  color: #000;
+  color: black;
 }
 
 .wrapper.style1 blockquote {
@@ -3132,7 +3135,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"]:hover,
 .wrapper.style1 button:hover,
 .wrapper.style1 .button:hover {
-  background-color: #4aa3df;
+  background-color: #0a2769;
 }
 
 .wrapper.style1 input[type="submit"]:active,
@@ -3140,7 +3143,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"]:active,
 .wrapper.style1 button:active,
 .wrapper.style1 .button:active {
-  background-color: #258cd1;
+  background-color: #0a2769;
 }
 
 .wrapper.style1 input[type="submit"].alt,
@@ -3378,7 +3381,7 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="button"].alt.icon:before,
 .wrapper.style2 button.alt.icon:before,
 .wrapper.style2 .button.alt.icon:before {
-  color: #67b2e4;
+  color: #0a2769;
 }
 
 .wrapper.style2 input[type="submit"].special,
@@ -3457,23 +3460,23 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 ::-webkit-input-placeholder {
-  color: #67b2e4 !important;
+  color: #0a2769 !important;
 }
 
 .wrapper.style2 :-moz-placeholder {
-  color: #67b2e4 !important;
+  color: #0a2769 !important;
 }
 
 .wrapper.style2 ::-moz-placeholder {
-  color: #67b2e4 !important;
+  color: #0a2769 !important;
 }
 
 .wrapper.style2 :-ms-input-placeholder {
-  color: #67b2e4 !important;
+  color: #0a2769 !important;
 }
 
 .wrapper.style2 .formerize-placeholder {
-  color: #67b2e4 !important;
+  color: #0a2769 !important;
 }
 
 .wrapper.style2 ul.alt li {
@@ -3481,7 +3484,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 header p {
-  color: #67b2e4;
+  color: #0a2769;
 }
 
 .wrapper.style2 table tbody tr {
@@ -3509,7 +3512,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 .image {
-  box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
 }
 
 @media screen and (max-width: 1280px) {
@@ -3616,7 +3619,7 @@ body.subpage {
 }
 
 #header > .logo a:hover {
-  color: #3498db;
+  color: grey;
 }
 
 #header > .logo span {
@@ -3638,7 +3641,7 @@ body.subpage {
 }
 
 #header > a:hover {
-  color: #3498db;
+  color: grey;
 }
 
 #header > a[href="#menu"] {
@@ -3794,7 +3797,7 @@ body.subpage {
 }
 
 #menu > ul.links > li:hover {
-  color: #3498db;
+  color: grey;
 }
 
 #menu > ul.links > li:first-child > a:not(.button) {
@@ -3838,7 +3841,7 @@ body.subpage {
 }
 
 #menu .close:hover {
-  color: #3498db;
+  color: grey;
 }
 
 @media screen and (max-width: 736px) {
@@ -3910,9 +3913,12 @@ body.subpage {
 
 #banner h1 {
   font-family: Milkshake;
-  font-size: 4em;
+  font-size: 5em;
   margin-bottom: 0.25em;
-  color: #fff;
+  color: white;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #fa002d;
+  text-shadow: 5px 5px #0a2769;
 }
 
 #banner p {

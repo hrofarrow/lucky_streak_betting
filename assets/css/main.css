@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
 @font-face {
   font-family: Milkshake;
-  src: url("assets/fonts/milkshake.ttf");
+  src: url("../fonts/milkshake.ttf");
 }
 /*
 	Urban by TEMPLATED
@@ -3912,7 +3912,7 @@ body.subpage {
 }
 
 #banner h1 {
-  font-family: Milkshake;
+  font-family: Milkshake, "Courier New", monospace;
   font-size: 5em;
   margin-bottom: 0.25em;
   color: white;

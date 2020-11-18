@@ -1,3 +1,9 @@
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from sklearn.linear_model import LogisticRegression
+from tensorflow.keras.utils import to_categorical
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -14,20 +20,17 @@ from sklearn.compose import ColumnTransformer
 
 
 %matplotlib inline
-import matplotlib.pyplot as plt
-import pandas as pd
-import os
-import numpy as np
 
 stats = pd.read_csv(os.path.join("csv/MLB DB V1 CSV.csv"))
-stats.rename(columns={"O/U Odds": "O/U_Odds"}, inplace= True)
+stats.rename(columns={"O/U Odds": "O/U_Odds"}, inplace=True)
 
 stats.FIELD[stats.FIELD == 'HOME'] = 1
 stats.FIELD[stats.FIELD == 'AWAY'] = 0
 
-stats = stats.drop(columns = ["Team", "Season", "Date", "Vs", "Score", "Away Starter", "Home Starter", "BAL Line", "O/U", "O/U Result", "Unnamed: 9", "Margin", "Runs Scr", "Runs Alw"])
+stats = stats.drop(columns=["Team", "Season", "Date", "Vs", "Score", "Away Starter", "Home Starter",
+                            "BAL Line", "O/U", "O/U Result", "Unnamed: 9", "Margin", "Runs Scr", "Runs Alw"])
 
-stats= stats.dropna()
+stats = stats.dropna()
 
 stats.head()
 
@@ -46,9 +49,6 @@ X = stats.drop("Game Result", axis=1)
 y = stats["Game Result"]
 print(X.shape, y.shape)
 
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from tensorflow.keras.utils import to_categorical
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 X_scaler = MinMaxScaler().fit(X_train)
@@ -66,7 +66,6 @@ encoded_y_test = label_encoder.transform(y_test)
 y_train_categorical = to_categorical(encoded_y_train)
 y_test_categorical = to_categorical(encoded_y_test)
 
-from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression()
 classifier
 
@@ -74,8 +73,6 @@ classifier.fit(X_train, y_train)
 
 predictions = classifier.predict(X_test)
 
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
 
 model = Sequential()
 model.add(Dense(units=100, activation='relu', input_dim=4))

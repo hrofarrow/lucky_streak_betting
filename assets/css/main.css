@@ -3644,12 +3644,12 @@ body.subpage {
   color: grey;
 }
 
-#header > a[href="#menu"] {
+#header > a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-#header > a[href="#menu"]:before {
+#header > a:before {
   content: "";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3659,7 +3659,7 @@ body.subpage {
   text-transform: none !important;
 }
 
-#header > a[href="#menu"]:before {
+#header > a:before {
   margin: 0 0.5em 0 0;
 }
 
@@ -3807,7 +3807,7 @@ body.subpage {
   border-top: 0 !important;
 }
 
-#menu .close {
+/* #menu .close {
   text-decoration: none;
   -moz-transition: color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out;
@@ -3841,7 +3841,7 @@ body.subpage {
 
 #menu .close:before {
   font-size: 1.25em;
-}
+} */
 
 #menu .close:hover {
   color: grey;
@@ -4123,7 +4123,7 @@ body.is-loading #banner:before {
   margin: auto;
   display: block;
   width: 25%;
-  max-width: 450px;
+  max-width: 75%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

@@ -21,6 +21,39 @@
 		<a href="#menu">Menu</a>
 	</header>
 
+	<form action="index.html" method="POST">
+		<fieldset>
+			<legend>Input values:</legend>
+			<br>
+			Home(1) or Away(0)?:
+			<input name="FIELD" type="number" required>
+			<br>
+			<br> MoneyLine:
+			<input name="Side Line" type="number" required>
+			<br>
+			<br> O/U Line:
+			<input name="O/U Line" type="number" required>
+			<br>
+			<br> O/U Odds:
+			<input name="O/U_Odds" type="number" required>
+			<br>
+			<br>
+			<input type="submit">
+		</fieldset>
+	</form>
+
+	<div class="result" align="center">
+		{% if result %}
+			for variable, value in original_input.items() %}
+				<b>{{ variable }}</b> : {{ value }}
+			{% endfor %}
+			<br>
+			<br> Predicted number of bikes in use:
+			   <p style="font-size:50px">{{ result }}</p>
+		{% endif %}
+		
+	</div>
+
 	<!-- Nav -->
 	<nav id="menu">
 		<ul class="links">

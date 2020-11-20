@@ -4178,3 +4178,13 @@ body.is-loading #banner:before {
     width: 100%;
   }
 }
+
+form {
+  margin: auto;
+  width: 35%;
+}
+.result {
+  margin: auto;
+  width: 35%;
+  border: 1px solid #ccc;
+}

@@ -1,29 +1,39 @@
-from flask import Flask, request, jsonify
-from model_files.ml_model import model
+import flask
+import pickle
 
-# creating a flask app and naming it "app"
-app = Flask('app')
+# Use pickle to load in the pre-trained model.
+with open(f'model/mlb_betting.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+app = flask.Flask(__name__, template_folder='templates')
+
+@app.route('/', methods=['GET', 'POST'])
+def main():
+
+    if flask.request.method == 'GET':
+        return(flask.render_template('index.html'))
 
 
-@app.route('/test', methods=['GET'])
-def test():
-    return 'Pinging Model Application!!'
+    if flask.request.method == 'POST':
 
+        FIELD = flask.request.form['FIELD']
+        Side_Line = flask.request.form['Side Line']
+        OU_Line = flask.request.form['O/U Line']
+        OU_Odds = flask.request.form['O/U_Odds']
 
-if __name__ == "__main__":
-    app.run(debug=True, port=9696)
+        input_variables = pd.DataFrame([[FIELD, Side_Line, OU_Line, OU_Odds]],
+                                       columns=['FIELD', 'Side Line', "OU Line", "OU_Odds"],
+                                       dtype=float)
 
+        prediction = model.predict(input_variables)[0]
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    vehicle = request.get_json()
-    print(vehicle)
-    with open('./model_files/model.bin', 'rb') as f_in:
-        model = pickle.load(f_in)
-        f_in.close()
-    predictions = predict_mpg(vehicle, model)
+    return flask.render_template('index.html',
+                                     original_input={'FIELD':FIELD,
+                                                     'Side_Line':Side_Line,
+                                                     'O/U Line':OU_Line,
+                                                     'O/U Odds':OU_Odds},
+                                     result=prediction,
+                                     )
 
-    result = {
-        'mpg_prediction': list(predictions)
-    }
-    return jsonify(result)
+if __name__ == '__main__':
+    app.run()

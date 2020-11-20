@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Lucky Streak - Predictions</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="logo"><a href="index.html">Lucky Streak <span>by Indiana Data Farmers</span></a></div>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="analysis.html">Analysis</a></li>
+			<li><a href="visualizations.html">Visualizations</a></li>
+			<li><a href="data.html">Data Manipulation</a></li>
+			<li><a href="resources.html">Resources</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Section -->
+		<section class="wrapper">
+			<div class="inner">
+				<header class="align-center">
+					<h1>Data Manipulation</h1>
+					<p>Want to know how you can use our findings? Read Below.</p>
+				</header>
+				<div class="flex flex-2">
+					<div class="col col2">
+						<h3>Conclusions</h3>
+						<p>Betting lines are set where they are for good reason. Staying consistent with a particular
+							betting strategy may seem like a good way to even the odds against you, but even so it
+							results in a net
+							loss more often than not. Trying to predict the future is still a risky business!</p>
+						<p>Below you will find some of the data we used to create our visualizations. Feel free to take
+							a look for yourself. Maybe you will find a strategy we missed!</p>
+					</div>
+					<!-- <div class="col  first">
+						<div class="image round fit">
+							<a href="" class="link"><img src="../images/predictions.png" alt="" /></a>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<hr>
+			<h3>Data Lookup</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel-body">
+							<table id="bet-table" class="table-sm table-striped table-condensed table-responsive m-0">
+								<thead>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Team
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Vs
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Away Starter
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Home Starter
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Field
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Result
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Runs Scored
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Runs Allowed
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Margin
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Money Line
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												O/U Result
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												O/U Line
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												O/U Odds
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												ML Results
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Over Results
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+									<th class="table-head">
+										<div class="dropdown">
+											<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												Under Results
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</th>
+								</thead>
+								<tbody></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<!-- <section class="wrapper style1">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Aliquam ipsum purus dolor</h2>
+					<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
+				</header>
+				<div class="flex flex-3">
+					<div class="col align-center">
+						<div class="image round fit">
+							<img src="images/pic03.jpg" alt="" />
+						</div>
+						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis
+							sollicitudin aliquet. </p>
+						<a href="#" class="button">Learn More</a>
+					</div>
+					<div class="col align-center">
+						<div class="image round fit">
+							<img src="images/pic05.jpg" alt="" />
+						</div>
+						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis
+							sollicitudin aliquet. </p>
+						<a href="#" class="button">Learn More</a>
+					</div>
+					<div class="col align-center">
+						<div class="image round fit">
+							<img src="images/pic04.jpg" alt="" />
+						</div>
+						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis
+							sollicitudin aliquet. </p>
+						<a href="#" class="button">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="copyright">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+			</ul>
+			<p><a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/teams.js"></script>
+
+</body>
+
+</html>

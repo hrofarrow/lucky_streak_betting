@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import jsonify
 import pandas as pd
-
+from flask_cors import CORS
 import pickle
 import pandas as pd
 
@@ -10,6 +10,7 @@ with open(f'model/mlb_betting.pkl', 'rb') as f:
     model = pickle.load(f)
 
 app = Flask(__name__, template_folder='templates')
+CORS(app)
 
 
 @app.route('/<FIELD>/<Side_Line>/<OU_Line>/<OU_Odds>', methods=['GET', 'POST'])
@@ -22,7 +23,7 @@ def main(FIELD, Side_Line, OU_Line, OU_Odds):
 
     prediction = model.predict(input_variables)[0]
 
-    return prediction
+    return jsonify(prediction)
 
 
 if __name__ == '__main__':

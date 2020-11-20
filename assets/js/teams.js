@@ -96,3 +96,4 @@ bettingData.then(function (bettingData) {
 
 // // // Test if it filtered correctly
 // // console.log(filteredDate);
+

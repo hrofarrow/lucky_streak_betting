@@ -181,8 +181,31 @@ img[i].addEventListener('click',function(){
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
+
+
+
+d3.selectAll("#submit_button")
+	.on("click", getdata) 
+
+function getdata(){
+	var field = document.getElementById("field").value
+	var money_line = document.getElementById("money_line").value
+	var line = document.getElementById("line").value
+	var odds = document.getElementById("odds").value
+
+	console.log(field)
+
+	var url = random
+
+	d3.json(url + "/" + field + "/" + money_line + "/" + line + "/" + odds).then((data)=>{
+		console.log(data)
+	})
 }
+
+
+
 
 

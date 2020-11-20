@@ -10,6 +10,8 @@
 	<title>Lucky Streak - Predictions</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 
@@ -45,18 +47,12 @@
 				<div class="flex flex-2">
 					<div class="col col2">
 						<h3>Conclusions</h3>
-						<p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio
-							vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus
-							auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta
-							augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet
-							erat nibh non ex.</p>
-						<p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis
-							sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque
-							fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum
-							iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. Sed sollicitudin bibendum
-							ultricies. Vivamus tristique justo lacinia dui tempus consequat. Integer tristique eu nisi
-							nec fermentum. Ut malesuada quis massa at ultricies. Donec gravida ipsum in augue volutpat
-							laoreet. Ut lobortis turpis sit amet sodales ultrices.</p>
+						<p>Betting lines are set where they are for good reason. Staying consistent with a
+							particular betting strategy may seem like a good way to even the odds against you, but even
+							so it results in a net
+							loss more often than not. Trying to predict the future is still a risky business!</p>
+						<p>Below you will find some of the data we used to create our visualizations. Feel free to take
+							a look for yourself. Maybe you will find a strategy we missed!</p>
 					</div>
 					<div class="col col1 first">
 						<div class="image round fit">
@@ -64,24 +60,111 @@
 						</div>
 					</div>
 				</div>
-				<p>Curabitur venenatis lorem ut finibus finibus. Ut quis eleifend libero, nec ultricies metus. Morbi
-					magna risus, congue sit amet pellentesque eget, malesuada ut justo. Sed ac pretium quam. Ut vel ex
-					vitae enim sagittis posuere ac id erat. Vestibulum vel ullamcorper tellus. Donec sapien massa,
-					venenatis ac felis vel, vestibulum sagittis enim. Maecenas ut egestas lorem, nec luctus ligula.
-					Vestibulum neque diam, aliquet non enim a, cursus lacinia metus. Aenean fringilla luctus rhoncus.
-					Integer vulputate massa ac suscipit venenatis. Integer luctus elit non nulla fringilla, ullamcorper
-					maximus sem congue. Integer tristique eu nisi nec fermentum. Ut malesuada quis massa at ultricies.
-				</p>
-				<p>Donec molestie tellus eu tincidunt dignissim. Sed sollicitudin bibendum ultricies. Vivamus tristique
-					justo lacinia dui tempus consequat. Sed hendrerit justo in nisl auctor, id rutrum tortor congue.
-					Vivamus mattis nibh et sem rutrum, vel viverra purus viverra. Donec et justo at orci euismod
-					hendrerit vel vel neque. Donec gravida ipsum in augue volutpat laoreet. Ut lobortis turpis sit amet
-					sodales ultrices.</p>
+				<hr>
+				<h3>Data Lookup</h3>
+				<form>
+					<div class="container">
+						<div class="row row-cols-2">
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Team</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Date</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Date</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Date</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Date</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label for="date">Enter a Date</label>
+											<input class="form-control" id="datetime" type="text"
+												placeholder="1/11/2011">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 			</div>
-		</section>
+			</form>
+			<div>
+				<table id="bet-table" class="table table-striped">
+					<thead>
+						<tr>
+							<th class="table-head">Team</th>
+							<th class="table-head">Vs</th>
+							<th class="table-head">Away Starter</th>
+							<th class="table-head">Home Starter</th>
+							<th class="table-head">Field</th>
+							<th class="table-head">Game Result</th>
+							<th class="table-head">Runs Scored</th>
+							<th class="table-head">Runs Allowed</th>
+							<th class="table-head">Margin</th>
+							<th class="table-head">Money Line</th>
+							<th class="table-head">O/U Result</th>
+							<th class="table-head">O/U Line</th>
+							<th class="table-head">O/U Odds</th>
+							<th class="table-head">ML Results</th>
+							<th class="table-head">Over Results</th>
+							<th class="table-head">Under Results</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+	</div>
+	</section>
 
-		<!-- Section -->
-		<!-- <section class="wrapper style1">
+	<!-- Section -->
+	<!-- <section class="wrapper style1">
 			<div class="inner">
 				<header class="align-center">
 					<h2>Aliquam ipsum purus dolor</h2>
@@ -132,12 +215,15 @@
 	</footer>
 
 	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/jquery.scrolly.min.js"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
 	<script src="../assets/js/skel.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/teams.js"></script>
 
 </body>
 

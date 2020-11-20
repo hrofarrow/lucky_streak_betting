@@ -62,109 +62,244 @@
 				</div>
 				<hr>
 				<h3>Data Lookup</h3>
-				<form>
-					<div class="container">
-						<div class="row row-cols-2">
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Team</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Date</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Date</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Date</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Date</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-group">
-									<ul class="list-group" id="filters">
-										<li class="filter list-group-item">
-											<label for="date">Enter a Date</label>
-											<input class="form-control" id="datetime" type="text"
-												placeholder="1/11/2011">
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="container">
+					<table id="bet-table" class="table table-striped">
+						<thead>
+							<tr>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Team
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Vs
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Away Starter
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Home Starter
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Field
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Result
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Runs Scored
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Runs Allowed
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Margin
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Money Line
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											O/U Result
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											O/U Line
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											O/U Odds
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											ML Results
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Over Results
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+								<th class="table-head">
+									<div class="dropdown">
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+											id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Under Results
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
 			</div>
-			</form>
-			<div>
-				<table id="bet-table" class="table table-striped">
-					<thead>
-						<tr>
-							<th class="table-head">Team</th>
-							<th class="table-head">Vs</th>
-							<th class="table-head">Away Starter</th>
-							<th class="table-head">Home Starter</th>
-							<th class="table-head">Field</th>
-							<th class="table-head">Game Result</th>
-							<th class="table-head">Runs Scored</th>
-							<th class="table-head">Runs Allowed</th>
-							<th class="table-head">Margin</th>
-							<th class="table-head">Money Line</th>
-							<th class="table-head">O/U Result</th>
-							<th class="table-head">O/U Line</th>
-							<th class="table-head">O/U Odds</th>
-							<th class="table-head">ML Results</th>
-							<th class="table-head">Over Results</th>
-							<th class="table-head">Under Results</th>
-						</tr>
-					</thead>
-					<tbody></tbody>
-				</table>
-			</div>
-	</div>
-	</section>
+		</section>
 
-	<!-- Section -->
-	<!-- <section class="wrapper style1">
+		<!-- Section -->
+		<!-- <section class="wrapper style1">
 			<div class="inner">
 				<header class="align-center">
 					<h2>Aliquam ipsum purus dolor</h2>

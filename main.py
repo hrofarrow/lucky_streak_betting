@@ -1,11 +1,13 @@
-import flask
+from flask import Flask
+from flask import jsonify
+import pandas as pd
 import pickle
 
 # Use pickle to load in the pre-trained model.
 with open(f'model/mlb_betting.pkl', 'rb') as f:
     model = pickle.load(f)
 
-app = flask.Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='templates')
 
 
 @app.route('/<FIELD>/<Side_Line>/<OU_Line>/<OU_Odds>', methods=['GET', 'POST'])

@@ -28,72 +28,69 @@ bettingData.then(function (bettingData) {
             cell.text(value);
         });
     });
+
+
+    // Event handler - attaching the function to the button
+    // Select the drop-down in the html and assign a variable
+    var teamChoice = d3.select(".team-menu");
+
+    // Create event handlers for selecting a team
+    teamChoice.on("change", runEnter);
+
+    // Create the function to run for both events
+    function runEnter() {
+        // Prevent the page from refreshing
+        d3.event.preventDefault();
+        // Select the input element and get the raw HTML node
+        var teamElement = d3.select("#datetime");
+        // Get the value property of the input element
+        var teamSelection = teamElement.property("value");
+        // Make sure it grabs input correctly
+        console.log(teamSelection);
+        // console.log(tableData);
+        // Filter by the input date
+        var filteredbyTeam = bettingData.filter(game => game.team === teamSelection);
+        // Check filter
+        console.log(filteredbyTeam);
+
+    };
+
 }).catch(function (error) {
     console.log(error);
 });
 
+// Read in the filtered data to the table
 
-// // Event handler - attaching the function to the button
-// // Select the button in the html and assign a variable
-// var button = d3.select("#filter-btn");
-// // Select the form in the html and assign a variable
-// var form = d3.select("#datetime");
+// Select the tbody and assign a variable
 
-// // Create event handlers for clicking the button or pressing the enter key
-// button.on("click", runEnter);
-// form.on("submit", runEnter);
 
-// // Create the function to run for both events
-// function runEnter() {
-//     // Prevent the page from refreshing
-//     d3.event.preventDefault();
-//     // Select the input element and get the raw HTML node
-//     var inputElement = d3.select("#datetime");
-//     // Get the value property of the input element
-//     var inputValue = inputElement.property("value");
-//     // Make sure it grabs input date correctly
-//     console.log(inputValue);
-//     console.log(tableData);
-//     // Filter by the input date
-//     var filteredbyTeam = tableData.filter(game => game.team === inputValue);
-//     // Check filter
-//     console.log(filteredbyTeam);
+// // Iterate through each table row
+// tableData.forEach((sighting) => {
 
+//     // Iterate through each key and value in the row
+//     Object.entries(sighting).forEach(([key, value]) => {
+
+//         // Use the key to determine which array to push the value to
+//         if (key === "datetime") {
+//             dishes.push(value);
+//         }
+//         else {
+//             spices.push(value);
+//         }
+//     });
+// });
+
+
+
+
+// // Create a filter function for searching by date
+// function selectDatetime(date) {
+//     return date.datetime === inputValue;
 // };
 
+// // Use custom function as filter argument
+// var filteredDate = tableData.filter(selectDatetime);
 
-// // Read in the filtered data to the table
-
-// // Select the tbody and assign a variable
-
-
-// // // Iterate through each table row
-// // tableData.forEach((sighting) => {
-
-// //     // Iterate through each key and value in the row
-// //     Object.entries(sighting).forEach(([key, value]) => {
-
-// //       // Use the key to determine which array to push the value to
-// //       if (key === "datetime") {
-// //         dishes.push(value);
-// //       }
-// //       else {
-// //         spices.push(value);
-// //       }
-// //      });
-// //   });
-
-
-
-
-// // // Create a filter function for searching by date
-// // function selectDatetime(date) {
-// //     return date.datetime === inputValue;
-// // };
-
-// // // Use custom function as filter argument
-// // var filteredDate = tableData.filter(selectDatetime);
-
-// // // Test if it filtered correctly
-// // console.log(filteredDate);
+// // Test if it filtered correctly
+// console.log(filteredDate);
 
